@@ -1,0 +1,53 @@
+.login-page {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    justify-content: left;
+}
+
+.login-page .layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 60vw;
+    justify-content: center;
+    align-items: start;
+}
+
+.signin-box {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 40vw;
+    justify-content: center;
+    align-items: center;
+    border: solid black 2px;
+}
+
+.login-page form {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 5vh;
+    align-items: center;
+} 
+
+
+.login-page input {
+  width: 20vw;
+  height: 5vh;
+  border: solid black 1px;
+  border-radius: 5%;
+}
+
+.login-page button {
+  width: 7.5vw;
+  height: 5vh;
+  border: solid black 1px;
+  border-radius: 10%;
+}
+
+.login-page button:hover {
+  background-color: rgb(234, 179, 152);
+}
