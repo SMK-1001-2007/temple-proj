@@ -1,0 +1,28 @@
+.bookings-page {
+    display: flex;
+    flex-direction: column;
+    margin: 1vh;
+}
+
+.bookings-page .layout {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.bookings-page .bookings {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.bookings-page button {
+    width: 7.5vw;
+    height: 5vh;
+    border: solid black 1px;
+    border-radius: 10%;
+}
+
+.bookings-page button:hover {
+  background-color: rgb(234, 179, 152);
+}

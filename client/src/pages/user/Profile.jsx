@@ -29,13 +29,10 @@ const Profile = () => {
     }, [navigate]);
 
     return (
-        <div>
-            <p>
-                name: {userData.name} <br />
-                email: {userData.email} <br />
-
-                <button onClick={() => navigate("/home")}>Home</button>
-            </p>
+        <div className='profile-page'>
+            <p>name: {userData.name}</p>
+            <p>email: {userData.email}</p>
+            <button onClick={() => navigate("/home")}>Home</button>
         </div>
     )
 }

@@ -57,8 +57,9 @@ const EditBooking = () => {
     }
 
     return (
-        <div>
-            <div>
+        <div className='edit-booking-page'>
+        <div className='layout'>
+            <div className='edit-booking-box'>
                 <form onSubmit={editBooking}>
                     <input 
                         type='text'
@@ -101,6 +102,7 @@ const EditBooking = () => {
                 </form>
             </div>
             <button onClick={() => navigate("/my-bookings")}>Cancel</button>
+        </div>
         </div>
     )
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import "./CreateBooking.css";
 
 const CreateBooking = () => {
     const navigate = useNavigate();
@@ -16,7 +17,7 @@ const CreateBooking = () => {
     const handleCreate = async (e) => {
         e.preventDefault();
         const token = localStorage.getItem("token");
-        if(!token) {
+        if (!token) {
             navigate("/login");
             return;
         }
@@ -34,8 +35,9 @@ const CreateBooking = () => {
     }
 
     return (
-        <div>
-            <div>
+        <div className='create-booking-page'>
+        <div className='layout'>
+            <div className='create-booking-box'>
                 <form onSubmit={handleCreate}>
                     <input 
                         type='text'
@@ -81,8 +83,9 @@ const CreateBooking = () => {
                         Create Booking
                     </button> 
                 </form>
+                <button onClick={() => navigate("/home")}>Cancel</button>
             </div>
-            <button onClick={() => navigate("/home")}>Cancel</button>
+        </div>
         </div>
     )
 }

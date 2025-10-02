@@ -29,20 +29,24 @@ const GetMyBookings = () => {
     }, [navigate]);
 
     return (
-        <div>
-            {
-                bookings.length == 0 ? (
-                    <p>You haven't booked any tickets yet.</p>
-                )
-                :
-                (
-                    bookings.map((booking) => (
-                        <Booking key = {booking.id} booking = {booking} />
-                    ))
-                )
+        <div className='bookings-page'>
+            <div className='layout'>
+                <div className='bookings'>
+                {
+                    bookings.length == 0 ? (
+                        <p>You haven't booked any tickets yet.</p>
+                    )
+                    :
+                    (
+                        bookings.map((booking) => (
+                            <Booking key = {booking.id} booking = {booking} />
+                        ))
+                    )
 
-            }
-            <button onClick={() => navigate("/home")}>Home</button>
+                }
+                </div>
+                <button onClick={() => navigate("/home")}>Home</button>
+            </div>
         </div>
     )
 }

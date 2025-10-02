@@ -28,12 +28,12 @@ const CancelBooking = () => {
     };
 
     return (
-        <div>
+        <div className='delete-booking-page'>
             <p>
                 Do you wanna cancel this booking?
             </p>
             <button onClick={cancelBooking}>Delete Booking</button>
-            <button onClick={() => navigate("/get-my-bookings")}>Cancel</button>
+            <button onClick={() => navigate("/my-bookings")}>Cancel</button>
         </div>
     )
 }

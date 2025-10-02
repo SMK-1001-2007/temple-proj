@@ -1,0 +1,32 @@
+.booking {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px black;
+}
+
+.booking .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking .info p {
+    margin: 1vh;
+}
+
+.booking .buttons {
+    display: flex;
+    flex-direction: row;
+    margin: 1vh;
+    gap: 1vh;
+}
+
+.booking button {
+    width: 7.5vw;
+    height: 5vh;
+    border: solid black 1px;
+    border-radius: 10%;
+}
+
+.booking button:hover {
+  background-color: rgb(234, 179, 152);
+}

@@ -1,0 +1,52 @@
+.create-booking-page {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+}
+
+.create-booking-page .layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 60vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-booking-box {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 40vw;
+    justify-content: center;
+    align-items: center;
+    border: solid black 2px;
+}
+
+.create-booking-page form {
+    display: flex;
+    gap: 2vh;
+    padding: 5vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+.create-booking-page input {
+  width: 20vw;
+  height: 5vh;
+  border: solid black 1px;
+  border-radius: 5%;
+}
+
+.create-booking-page button {
+  width: 7.5vw;
+  height: 5vh;
+  border: solid black 1px;
+  border-radius: 10%;
+}
+
+.create-booking-page button:hover {
+  background-color: rgb(234, 179, 152);
+}
